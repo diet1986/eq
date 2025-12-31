@@ -2,152 +2,261 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EarthQuant - Climate & Weather Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-    }
-    .navbar {
-      background-color: rgba(0, 60, 90, 0.9);
-    }
-    .navbar-brand img {
-      height: 50px;
-      margin-right: 10px;
-    }
-    .hero {
-      text-align: center;
-      padding: 6rem 2rem;
-      background: url("https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&fit=crop&w=1600&q=80") no-repeat center/cover;
-      color: white;
-      position: relative;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.4);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-    .services {
-      padding: 4rem 2rem;
-    }
-    .service-card {
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-      padding: 1.5rem;
-      color: #003c5a;
-    }
-    .service-card:hover {
-      transform: translateY(-10px);
-    }
-    /* Light colorful backgrounds */
-    .bg-light-blue { background-color: #e6f2ff; }
-    .bg-light-green { background-color: #e9fce6; }
-    .bg-light-yellow { background-color: #fff9e6; }
-    .bg-light-pink { background-color: #ffe6f2; }
-    .bg-light-purple { background-color: #f3e6ff; }
-    .bg-light-teal { background-color: #e6fffb; }
-
-    footer {
-      background: #003c5a;
-      color: white;
-      padding: 1rem 0;
-      text-align: center;
-    }
-  </style>
+  <title>EARTHQUANT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="images/logo.jpeg" alt="EarthQuant Logo">
-        <span class="fw-bold text-white">EarthQuant</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/logo.jpg" height="44"></a>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Our Vision</a></li>
+        <li class="nav-item"><a class="nav-link" href="#latest-insights">More</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-contact" href="#">Contact Us</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-top">
+  <h1>
+    Climate Intelligence-<br>
+    Transforming Possibilities
+  </h1>
+</section>
+
+<section class="hero-bottom">
+  <div class="hero-text">
+    <p>
+      At EARTHQUANT, we empower businesses and investors with AI-driven climate insights
+      to mitigate risks and seize opportunities in a changing environment.
+    </p>
+    <a href="#" class="btn-cta">Get in Touch</a>
+  </div>
+  <div class="hero-image">
+    <img src="images/solar.jpg">
+  </div>
+</section>
+
+<div class="section-gap"></div>
+
+<!-- SERVICES (RESTORED) -->
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 class="services-title">Services</h2>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="service-img"><img src="images/climate_analytics.jpg"></div>
+          <div class="service-body">
+            <h3>Climate Analytics</h3>
+            <p class="price">$150</p>
+            <a href="#" class="btn service-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="service-img"><img src="images/weather_intelligent_course.jpg"></div>
+          <div class="service-body">
+            <h3>Weather Intelligence Course</h3>
+            <p class="price">$200</p>
+            <a href="#" class="btn service-btn">View Course</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="service-img"><img src="images/climate_strategy_consultation.jpg"></div>
+          <div class="service-body">
+            <h3>Climate Strategy Consultation</h3>
+            <p class="price">$250</p>
+            <a href="#" class="btn service-btn">Book Now</a>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="display-4">Weather & Climate Intelligence</h1>
-      <p class="lead">Smart Solutions for a Sustainable Future</p>
-      <a href="#services" class="btn btn-success btn-lg mt-3">Explore Services</a>
-    </div>
-  </section>
+<div class="section-gap"></div>
 
-  <!-- Services Section -->
-  <section id="services" class="services container">
-    <h2 class="text-center mb-5">Our Services</h2>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="card service-card bg-light-blue h-100 text-center">
-          <h5>Climate Change Mitigation & Adaptation</h5>
-          <p>Technology-driven solutions for resilience and risk reduction.</p>
+<!-- EVENTS -->
+<section id="events" class="events-section">
+  <div class="container">
+    <h2 class="events-title">Upcoming Events</h2>
+    <div class="row mt-4 g-0 align-items-stretch">
+      <div class="col-md-6 d-flex">
+        <div class="event-text-box w-100">
+          <h3>Climate Science Meets Business Strategy</h3>
+          <div class="event-meta">
+            <div>Nov 27, 2025, 6:34 p.m. – 8:34 p.m.</div>
+            <div class="divider"></div>
+            <div>
+              GreenTech Auditorium,<br>
+              Echo Ave, New Rochelle, NY 10801, USA
+            </div>
+          </div>
+          <a href="#" class="btn event-btn">Details</a>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card service-card bg-light-green h-100 text-center">
-          <h5>Weather & Climate Forecasting</h5>
-          <p>Short-term, seasonal, and long-term forecasts for better planning.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card service-card bg-light-yellow h-100 text-center">
-          <h5>Renewable Energy Forecasting</h5>
-          <p>Solar, wind, and hydro forecasting for energy and power trading.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card service-card bg-light-pink h-100 text-center">
-          <h5>Climate Risk Assessment</h5>
-          <p>Data-driven risk models for index-based product structures.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card service-card bg-light-purple h-100 text-center">
-          <h5>Asset Management Services</h5>
-          <p>Performance monitoring, predictive maintenance, and compliance.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card service-card bg-light-teal h-100 text-center">
-          <h5>Carbon & ESG Advisory</h5>
-          <p>Helping enterprises transition to net-zero with AI & satellite data.</p>
+      <div class="col-md-6 d-flex">
+        <div class="event-image-box w-100">
+          <img src="images/upcoming_event_section_image.jpg">
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="container py-5">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <p class="text-center">Email: info@earthquant.co | Phone: +91-XXXXXXXXXX</p>
-  </section>
+<div class="section-gap"></div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 EarthQuant. All Rights Reserved.</p>
-  </footer>
+<!-- LATEST INSIGHTS -->
+<section id="latest-insights">
+  <div class="container">
+    <h2 class="latest-insights-title">Latest Insights</h2>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <div class="li-card">
+          <span class="li-author">shiviyecho</span>
+          <h3>Navigate Climate Uncertainty with EARTHQUANT's Insights</h3>
+          <div class="li-footer"><span>👁 0</span><span>♡</span></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="li-card">
+          <span class="li-author">shiviyecho</span>
+          <h3>AI-Powered Climate Intelligence for Smarter Decision Making</h3>
+          <div class="li-footer"><span>👁 0</span><span>♡</span></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="li-card">
+          <span class="li-author">shiviyecho</span>
+          <h3>Transform Climate Data Into Actionable Business Strategies</h3>
+          <div class="li-footer"><span>👁 0</span><span>♡</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="section-gap"></div>
+
+
+
+
+<div class="section-gap"></div>
+
+<section id="research">
+  <div class="container">
+    <h2 class="research-title">Our Research</h2>
+
+    <div class="row mt-5 g-4">
+      <div class="col-md-3">
+        <div class="research-card">
+          <span class="research-step">01 &nbsp; Climate Data</span>
+          <img src="images/climate_data.jpg" class="research-img">
+          <p>We specialize in collecting and analyzing hyperlocal climate data for actionable insights.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="research-card">
+          <span class="research-step">02 &nbsp; Weather Modeling</span>
+          <img src="images/weather_modelling.jpg" class="research-img">
+          <p>Our parametric models predict climate trends to assist in strategic decision-making.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="research-card">
+          <span class="research-step">03 &nbsp; Risk Assessment</span>
+          <img src="images/risk_assesment.jpg" class="research-img">
+          <p>We evaluate operational risks to ensure your business is climate-resilient.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="research-card">
+          <span class="research-step">04 &nbsp; Insights Delivery</span>
+          <img src="images/insight_delivery.jpg" class="research-img">
+          <p>Real-time analytics provide you with timely updates on climate conditions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="section-gap"></div>
+
+
+
+
+<div class="section-gap"></div>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="row">
+      <!-- LEFT -->
+      <div class="col-md-6">
+        <h2 class="contact-title">
+          Contact us for more<br>
+          information on our<br>
+          services.
+        </h2>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4 contact-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Refund Policy</a>
+          </div>
+
+          <div class="col-md-4 contact-address">
+            <p>
+              500 Terry Francine Street,<br>
+              6th Floor, San Francisco,<br>
+              CA 94158
+            </p>
+            <p>
+              info@earthquant.com<br>
+              +1 123-456-7890
+            </p>
+          </div>
+
+          <div class="col-md-4 contact-social">
+            <div class="icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-tiktok"></i>
+            </div>
+            <div class="contact-footer">
+              © 2035 by EARTHQUANT.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
